@@ -51,11 +51,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="main">
-      <div className="ContactForm">
-      <div className="title">
+    <div className="outline">
+          <div className="title">
                 Contact Me
             </div>
+      <div className="ContactForm">
         <div className="card maincard">
           {/* change from a p tag to margin */}
           <p>
