@@ -1,19 +1,21 @@
 import { Container, Row, Button } from "react-bootstrap";
-import "./landingPage.css";
+import "./artPortfolio.css";
+import Header from "../../components/webDevComponents/header";
 
-const LandingPage = () => {
+const ArtPortfolio = () => {
   return (
     <div className="main">
+ <Header/>
       <Container>
         <Row>
           <div className="intro-text">
             <div>
               <h1 className="title">Morgan Woods Portfolio</h1>
-              <p className="subTitle">"Waiting for something to happen?"</p>
             </div>
+            <img className="profilePic" src="https://i.imgur.com/Jn24JKy.jpeg"/>
             <div className="buttonContainer">
-              <a href="./development">
-                <Button size="lg" className="landingButton">
+              <a href="./contactMe">
+                <Button>
                   Contact Me
                 </Button>
               </a>
@@ -25,4 +27,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default ArtPortfolio;

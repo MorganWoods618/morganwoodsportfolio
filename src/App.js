@@ -1,18 +1,17 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import LandingPage from './pages/landingPage';
-import Header from './components/header'
-import ContactForm from './pages/contactPage';
-import ExperiencePage from './pages/experiencePage';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutMe from "./pages/webDev/aboutMePage";
+import ContactForm from "./pages/webDev/contactPage";
+import ExperiencePage from "./pages/webDev/experiencePage";
+import LandingPage from "./pages/landingPage/landingPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
-        <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="contactme" element={<ContactForm/>} />
-      <Route path="experience" element={<ExperiencePage/>} />
-
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/webdevelopment" element={<AboutMe />} />
+        <Route path="contactme" element={<ContactForm />} />
+        <Route path="experience" element={<ExperiencePage />} />
       </Routes>
     </BrowserRouter>
   );

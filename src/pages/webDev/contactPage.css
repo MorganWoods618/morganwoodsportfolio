@@ -1,0 +1,55 @@
+.outline {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 95px;
+  color: black;
+  filter: drop-shadow(10px 0 30px #fbfbfb);
+}
+
+.maincard {
+  background-color: rgb(255, 255, 255);
+  min-width: 40vw;
+  margin-top: 20vh;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactIcons {
+  flex-direction: row;
+}
+ul {
+  min-width: 98vw;
+}
+
+/* .outline {
+display: flex;} */
+
+@media only screen and (min-width: 1200px) {
+  .buttonContainer {
+    padding: 0 200px;
+  }
+  .title {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 60px;
+  }
+  .landingButton {
+    width: 150px;
+    height: 50px;
+  }
+}

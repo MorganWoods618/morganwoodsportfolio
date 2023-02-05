@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.mainlanding {
+  min-height: 95vh;
+  min-width: 98vw;
+  display: flex;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1594847175687-6740085fc76b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.buttonContainer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+:root {
+  --glow-color: rgb(1, 0, 2);
+}
+
+.glowing-btn {
+  cursor: pointer;
+  background: none;
+  font-family: 'Anton', sans-serif;
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(25, 22, 22, 0.3);
+  text-shadow: 0 0 5px rgb(254, 254, 254);
+
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+
+
+.landingbutton {
+  width: 75vh;
+  height: 30vh;
+  font-size: 75px;
+  border-radius: 20%;
+  border-style: double;
+  border-width: 5px;
+  color: transparent;
+  text-shadow: 0 0 1px #000;
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  .buttonContainer {
+    padding: 0 200px;
+  }
+  .title {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn {
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 80%;
+    
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+}

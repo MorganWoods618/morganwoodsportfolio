@@ -4,8 +4,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./contactPage.css";
 import { MdOutlineEmail } from "react-icons/md";
+import Header from "../../components/webDevComponents/header";
 
-const ContactForm = () => {
+const ContactForm2 = () => {
   const {
     register,
     handleSubmit,
@@ -51,6 +52,8 @@ const ContactForm = () => {
   };
 
   return (
+   <div>
+    <Header/>
     <div className="outline">
           <div className="title">
                 Contact Me
@@ -172,7 +175,9 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
+    </div>
+
   );
 };
 
-export default ContactForm;
+export default ContactForm2;

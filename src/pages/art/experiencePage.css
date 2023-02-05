@@ -30,3 +30,7 @@ img {
   ul {
   min-width: 98vw;
   }
+
+  .badge {
+    max-height: 20vh;
+  }

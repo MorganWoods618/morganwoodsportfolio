@@ -83,8 +83,13 @@
 .title {
   font-size: 95px;
   filter: drop-shadow(0 0 30px #ffffff);
+  margin-bottom: 0px;
 }
 
+.profilePic {
+  max-height: 25vh;
+  border-radius: 810%
+}
 .subTitle {
   font-size: 25px;
   padding-top: 10px;
