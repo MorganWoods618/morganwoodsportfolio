@@ -3,6 +3,7 @@ import AboutMe from "./pages/webDev/aboutMePage";
 import ContactForm from "./pages/webDev/contactPage";
 import ExperiencePage from "./pages/webDev/experiencePage";
 import LandingPage from "./pages/landingPage/landingPage";
+import ResumePage from "./pages/webDev/resumePage";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/webdevelopment" element={<AboutMe />} />
         <Route path="contactme" element={<ContactForm />} />
         <Route path="experience" element={<ExperiencePage />} />
+        <Route path="resume" element={<ResumePage />} />
+
       </Routes>
     </BrowserRouter>
   );

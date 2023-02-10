@@ -73,7 +73,7 @@
   min-width: 98vw;
   display: flex;
   align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1599813391721-ed8c5fe98166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1878&q=80);
+  background-image: url(https://images.unsplash.com/photo-1556388275-bb5585725aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,22 +84,47 @@
   font-size: 95px;
   filter: drop-shadow(0 0 30px #ffffff);
   margin-bottom: 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.564) 0%,
+    rgba(9, 9, 121, 0.493) 35%,
+    rgba(32, 199, 232, 0.288) 100%
+  );
+  border-radius: 50%;
 }
 
 .aboutMeText {
-  filter: blur(.02em);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  filter: blur(0.02em);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   filter: drop-shadow(0 0 20px #ffffff);
-  padding: 2px 16px;
+  padding: 1vw;
+  margin: 1vw;
   max-width: 55vw;
-  border: aqua;
+  border: rgb(1, 1, 1);
   border-width: 5px;
+  background-color: rgba(0, 0, 0, 0.365);
+  flex-direction: column;
+  border-radius: 25px;
+}
+
+.experienceAboutMe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .profilePic {
-  max-height: 25vh;
-  border-radius: 810%
+  max-width: 50vw;
+  border-radius: 30%;
+  padding: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 1, 6, 0.724) 0%,
+    rgba(88, 88, 107, 0.721) 35%,
+    rgba(249, 252, 252, 0.642) 100%
+  );
 }
+
 .subTitle {
   font-size: 25px;
   padding-top: 10px;
@@ -110,13 +135,20 @@
   text-align: center;
 }
 
-.buttonContainer {
+.header {
+  flex-direction: row;
+}
+.cardAboutMe {
+  padding: 50px;
+}
+
+/* .buttonContainer {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
-.button {
+/* .button {
   position: relative;
   background-color: #4caf50;
   border: none;
@@ -129,6 +161,20 @@
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+} */
+
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1vw;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .button:after {
@@ -154,6 +200,13 @@
 .landingButton {
   width: 200px;
   height: 55px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1),
+    rgba(98, 121, 128, 0.438),
+    rgb(192, 201, 203)
+  );
+  font-weight: bolder;
 }
 
 @media only screen and (min-width: 1200px) {
