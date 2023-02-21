@@ -2,11 +2,11 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import "./contactPage.css";
+import "./contactPageArt.css";
 import { MdOutlineEmail } from "react-icons/md";
 import Header from "../../components/webDevComponents/header";
 
-const ContactForm2 = () => {
+const ArtContact = () => {
   const {
     register,
     handleSubmit,
@@ -180,4 +180,4 @@ const ContactForm2 = () => {
   );
 };
 
-export default ContactForm2;
+export default ArtContact;

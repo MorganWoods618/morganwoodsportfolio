@@ -4,6 +4,9 @@ import ContactForm from "./pages/webDev/contactPage";
 import ExperiencePage from "./pages/webDev/experiencePage";
 import LandingPage from "./pages/landingPage/landingPage";
 import ResumePage from "./pages/webDev/resumePage";
+import ArtPortfolio from "./pages/art/artPortfolio";
+import ArtContact from "./pages/art/contactPageArt";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
@@ -14,7 +17,8 @@ function App() {
         <Route path="contactme" element={<ContactForm />} />
         <Route path="experience" element={<ExperiencePage />} />
         <Route path="resume" element={<ResumePage />} />
-
+        <Route path="/artportfolio" element={<ArtPortfolio />} />
+        <Route path="/artportfoliocontact" element={<ArtContact />} />
       </Routes>
     </BrowserRouter>
   );
